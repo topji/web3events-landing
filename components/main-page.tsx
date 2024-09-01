@@ -55,7 +55,7 @@ function Globe() {
     }
     return { positions, colors }
   }, [])
-
+  
   useFrame((state, delta) => {
     if (pointsRef.current && sphereRef.current) {
       pointsRef.current.rotation.y += delta * 0.1
@@ -96,7 +96,7 @@ function Globe() {
 
 export function MainPage() {
   return (
-    <div className="relative w-full h-screen bg-gradient-to-b from-gray-900 via-purple-950 to-violet-950">
+    <div className="relative w-full h-full bg-gradient-to-b from-gray-900 via-purple-950 to-violet-950">
       <nav className="absolute top-0 left-0 w-full z-10 bg-black bg-opacity-30 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600">Web3Events.xyz</div>
@@ -115,16 +115,16 @@ export function MainPage() {
         <Globe />
       </Canvas>
       <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-white">
-        <h1 className="text-xl md:text-6xl font-bold mb-8">Discover Web3 Events</h1>
-        <p className="text-sm md:text-lg mb-8 opacity-70">Built for the degens, by the degens</p>
+        <h1 className="text-xl md:text-6xl font-bold mb-8">GM, Merch Collectooooors</h1>
+        <p className="text-sm md:text-lg mb-8 opacity-70">We know you're out there. We know you're out there.</p>
         <div className="flex space-x-4">
-          <Button variant="default" onClick={() => window.open('https://app.web3events.xyz', '_blank')}>Launch App</Button>
+          <Button variant="default" onClick={() => window.open('https://app.web3events.xyz', '_blank')}>Discover Events</Button>
           <Button variant="ghost" onClick={() => window.open('https://mint.web3events.xyz', '_blank')}>All Access NFT 🔥🔥</Button>
         </div>
       </div>
       <footer className="absolute bottom-0 left-0 w-full bg-black bg-opacity-30 text-white p-4">
         <div className="container mx-auto flex justify-between items-center text-sm">
-          <div>2024 © All rights reserved</div>
+          <div>Built for the degens, by the degens</div>
           <div className="flex space-x-4">
             <a href="https://basescan.org/address/0xc1F7D779c5EbE4715409D6158Af7f59B3F3ba991" className="hover:underline" target="_blank" rel="noopener noreferrer">Donate</a>
             <a href="#" className="hover:underline">Promote event</a>
